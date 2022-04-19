@@ -14,17 +14,19 @@ void printchar(unsigned char c){
   }
 }
 
-int main()
-{
+int main(){
   int x;
   short int y[3], i;
   unsigned char *pc;
   pc = &x;
   pc[0] = 1;
   pc[1] = 1;
-
-  printf("x = %d\n", x);
-//  printf("c = %d\n", pc[1]);
+  for(i=3; i>=0; i--){
+    printchar(pc[i]);
+    printf("|");
+  }
+  // printf("x = %d\n", x);
+  //  printf("c = %d\n", pc[1]);
 
   printf("\n");
   return 0;
