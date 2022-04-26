@@ -24,12 +24,16 @@ int main()
   for(i=0; i<n; i++){
     y[i] = x[i];
   }
+
+  memcpy(y, x, n * sizeof (int));
+
   for(i=0; i<n; i++){
     printf("%d, ", y[i]);
   }
   printf("\n");
   // libera o bloco alocado
   free(x);
+  free(y);
   return 0;
 }
 
