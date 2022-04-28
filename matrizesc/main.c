@@ -22,7 +22,7 @@ int main(){
     }
   }
   for(i=0; i<nl; i++){
-    memcpy(y[i], x[i], nc*sizeof(int));
+    memcpy(y[i], x[i], nc * sizeof(int));
   }
   for(i=0; i<nl; i++){
     for(j=0; j<nc; j++){
@@ -33,6 +33,10 @@ int main(){
   for(i=0; i<nl; i++){
     free(x[i]);
   }
+  for(i=0; i<nl; i++){
+    free(y[i]);
+  }
+  free(y);
   free(x);
   return 0;
 }
