@@ -1,8 +1,24 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
-void* myrealloc(void*, int oldsize, int newsize){
-  
+int* myrealloc(int* y, int oldsize, int newsize) {
+  int* z;
+  // newsize igual
+  if (oldsize == newsize) {
+    return y;
+  }
+  // newsize menor
+  if (newsize < oldsize) {
+    z = malloc(newsize * sizeof(int));
+    memcpy(z, y, newsize * sizeof(int));
+    free(y);
+    return (z);
+  }
+  // newsize maior
+  z = calloc(newsize * sizeof(int));
+  memcpy(z, y, oldsize * sizeof(int));
+  free(y);
+  return (z);
 }
 
 int main(void) {
@@ -15,7 +31,7 @@ int main(void) {
     printf("%d, ", x[i]);
   }
   printf("\n");
-  x = realloc(x, n*sizeof(int));
+  x = realloc(x, n * sizeof(int));
   for (i = 0; i < n; i++) {
     printf("%d, ", x[i]);
   }
