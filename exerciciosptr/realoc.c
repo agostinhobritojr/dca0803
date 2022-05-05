@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// void* myrealloc(void* y, int oldsize, int newsize);
+//                            em bytes     em bytes 
 int* myrealloc(int* y, int oldsize, int newsize) {
   int* z;
   // newsize igual
