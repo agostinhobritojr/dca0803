@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <cmath>
 class Vetor2d{
 private:
   float x, y;
@@ -10,10 +10,33 @@ public:
   float getX(){
     return x;
   }
-  // setY
-  // getY
+  void print(){
+    std::cout << "(" << x << "," << y << ")";
+  }
+  void setY(float y_){
+    y = y_;
+  }
+  float getY(){
+    return y;
+  }
+  float tamanho(void){
+    return std::sqrt(x*x + y*y);
+  }
 };
+
 int main(void){
   Vetor2d v;
-  v.setX(3); std::cout << v.getX();
+  float tam;
+
+  v.setX(3); v.setY(4);
+
+  tam = v.tamanho();
+
+  std::cout << "tamanho = " << tam << "\n";
+
+  v.print();
+  std::cout << "\n";
 }
+
+
+
