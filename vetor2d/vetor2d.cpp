@@ -4,6 +4,25 @@
 
 // metodo setX no escopo da
 // classe Vetor2d
+/*Vetor2d::Vetor2d(){
+  x = y = 0;
+  std::cout << "construtor padrao\n";
+}*/
+
+Vetor2d::Vetor2d(int x_, int y_){
+  x = x_; y = y_;
+  std::cout << "construtor com argumentos\n";
+}
+
+Vetor2d::Vetor2d(Vetor2d &v){
+  x = v.x; y = v.y;
+  std::cout << "construtor de copia\n";
+}
+
+Vetor2d::~Vetor2d(){
+  std::cout << "destrutor\n";
+}
+
 void Vetor2d::setX(float x_){
   x = x_;
 }
