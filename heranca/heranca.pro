@@ -4,4 +4,10 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        main.cpp
+        equipamento.cpp \
+        main.cpp \
+        motor.cpp
+
+HEADERS += \
+  equipamento.h \
+  motor.h
