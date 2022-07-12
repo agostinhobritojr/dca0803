@@ -6,7 +6,9 @@ class FiguraGeometrica
 {
 public:
   FiguraGeometrica();
-  virtual void draw();
+  virtual ~FiguraGeometrica(){};
+  // funcao virtual pura
+  virtual void draw()=0;
 };
 
 #endif // FIGURAGEOMETRICA_H

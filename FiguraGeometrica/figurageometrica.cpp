@@ -5,7 +5,7 @@ FiguraGeometrica::FiguraGeometrica(){
 
 }
 
-void FiguraGeometrica::draw()
+/*void FiguraGeometrica::draw()
 {
   std::cout << "Draw FiguraGeometrica\n";
-}
+}*/
