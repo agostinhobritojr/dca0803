@@ -9,7 +9,7 @@ void printbits(unsigned char c){
 }
 
 int main(){
-  int x ;
+  int x;
  // x = 641;
   x = 0;
   unsigned char *pc;  //int *pc;
