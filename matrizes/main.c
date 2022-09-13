@@ -12,16 +12,34 @@ int main(){
     x[i] = (int*) malloc(nc*sizeof(int));
   }
 
+  // aloca o array auxiliar
+  y = (int**) malloc(nl*sizeof(int*));
+  // aloca as linhas
+  for(i=0; i<nl; i++){
+    y[i] = (int*) malloc(nc*sizeof(int));
+  }
+
   // usa a matriz
   for(i=0; i<nl; i++){
     for(j=0; j<nc; j++){
       x[i][j] = rand()%10+1;
     }
   }
-  y = x;
+  // usa a matriz
+  for(i=0; i<nl; i++){
+    for(j=0; j<nc; j++){
+      y[i][j] = x[i][j];
+    }
+  }
   printf("x = %p\n", x);
   printf("y = %p\n", y);
   // usa a matriz
+  for(i=0; i<nl; i++){
+    for(j=0; j<nc; j++){
+      printf("%2d ", x[i][j]);
+    }
+    printf("\n");
+  }
   for(i=0; i<nl; i++){
     for(j=0; j<nc; j++){
       printf("%2d ", y[i][j]);
