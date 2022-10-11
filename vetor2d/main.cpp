@@ -1,37 +1,15 @@
 #include <iostream>
-#include <cmath>
-
-class Vetor2d{
-private:
-  float x, y;
-public:
-  void setX(float x_){
-    x = x_;
-  }
-  float getX(){
-    return x;
-  }
-  void setY(float y_){
-    y = y_;
-  }
-  float getY(){
-    return y;
-  }
-  void print(){
-    std::cout << "(" << x << "," << y << ")";
-  }
-  float norma(){
-    return std::sqrt(x*x+y*y);
-  }
-  float angulo(){
-//    return std::atan(y/x)*180/3.14;
-    return std::atan2(y,x)*180/3.14;
-  }
-};
+#include "vetor2d.h"
 
 int main(void){
   Vetor2d v;
-  float alo, tam, ang;
+  Vetor2d v1, v2, v3;
+  v1.setX(3); v1.setY(4);
+  v2.setX(5); v2.setY(2);
+  v3 = v1.soma(v2);
+  v3.print();
+  std::cout << std::endl;
+/*  float alo, tam, ang;
  // v.x = -3; // x eh privada da classe Vetor2d
   v.setX(0);
   std::cout << v.getX();
@@ -42,6 +20,7 @@ int main(void){
   std::cout << "norma = " << tam << std::endl;
   ang = v.angulo();
   std::cout << "angul = " << ang << std::endl;
+ */
 }
 
 
