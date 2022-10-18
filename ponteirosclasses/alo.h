@@ -4,7 +4,9 @@
 class Alo{
   int x;
 public:
-  Alo();
+//  Alo();
+  Alo(int _x=0);
+  ~Alo();
   void print();
 };
 
