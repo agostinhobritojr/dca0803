@@ -29,6 +29,8 @@ int main(){
   std::cout << *x << std::endl;
   std::cout <<"x =" << x << std::endl;
   delete x;
+  // evita liberacao dupla de memoria
+  // acidental
   x = nullptr;
   delete x;
 
