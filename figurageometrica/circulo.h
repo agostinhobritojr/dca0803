@@ -7,6 +7,7 @@ class Circulo : public FiguraGeometrica
 {
 public:
   Circulo();
+  ~Circulo();
   void draw();
 };
 

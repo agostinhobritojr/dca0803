@@ -7,6 +7,7 @@ class Reta : public FiguraGeometrica
 {
 public:
   Reta();
+  ~Reta();
   void draw();
 };
 

@@ -7,6 +7,7 @@ class Retangulo : public FiguraGeometrica
 {
 public:
   Retangulo();
+  ~Retangulo();
   void draw();
 };
 
