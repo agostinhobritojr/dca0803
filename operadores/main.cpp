@@ -14,10 +14,19 @@ int main(void){
 //  v2.setX(5); v2.setY(2);
 
 //  v3 = v1.soma(v2);
-  v3 = v1.operator+(v2);
+//  v3 = v1.operator+(v2);
+  v3 = v1 + v2;
+//  v3 = v1*2 + v2;
+
+  v3 = 2*v1 + v2;
+
   v1.print();
   v2.print();
   v3.print();
+
+  std::cout << "produto interno = ";
+  std::cout << v1*v2 << std::endl;
+
 /*  std::cout << std::endl;
   std::cout << v1.produto(v2);
   std::cout << std::endl;

@@ -65,6 +65,19 @@ Vetor2d Vetor2d::operator +(Vetor2d v2){
   return ret;
 }
 
+Vetor2d Vetor2d::operator*(float a){
+  Vetor2d ret;
+  ret.x = x*a;
+  ret.y = y*a;
+  return ret;
+}
+
+float Vetor2d::operator*(Vetor2d v2){
+  float ret;
+  ret = x*v2.x + y*v2.y;
+  return ret;
+}
+
 Vetor2d Vetor2d::subtracao(Vetor2d v2){
   Vetor2d ret;
   ret.x = x - v2.x;
@@ -93,6 +106,14 @@ void Vetor2d::teste1(float a, int b)
 {
   std::cout << "teste1-b\n";
 }
+
+Vetor2d operator*(float a, Vetor2d v){
+  Vetor2d ret;
+  ret.setX(a*v.getX());
+  ret.setY(a*v.getY());
+  return ret;
+}
+
 
 
 

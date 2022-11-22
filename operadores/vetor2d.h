@@ -31,6 +31,8 @@ public:
 
   // sobrecarga do operador +
   Vetor2d operator + (Vetor2d v2);
+  Vetor2d operator* (float a);
+  float operator *(Vetor2d v2);
 
   Vetor2d subtracao(Vetor2d v2);
   // sobrecarga de mehtodos
@@ -39,6 +41,17 @@ public:
   void teste1(int a, float b);
   void teste1(float a, int b);
 };
+
+Vetor2d operator*(float a, Vetor2d v);
+
+
+
+
+
+
+
+
+
 
 #endif // VETOR_CPP
 
