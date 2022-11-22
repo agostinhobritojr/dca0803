@@ -13,6 +13,12 @@ int main(){
 // erro!!!
 //  testereta = &testefig;
 
+  // guardar no array figs 5 elementos alocados
+  // DINAMICAMENTE
+  // 2 retas
+  // 2 circulos
+  // 1 retangulo
+
   fig[0] = &reta;
   fig[1] = &circulo;
   fig[2] = &retangulo;
