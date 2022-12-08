@@ -7,14 +7,14 @@
 #include <fstream>
 #include <string>
 #include <cstdlib>
+#include <vector>
 
 int main(){
   Sculptor *s;
   int nx, ny, nz;
   int x0, x1, y0, y1, z0, z1;
   float r, g, b, a;
-  FiguraGeometrica *f[100];
-  int nelem = 0;
+  std::vector<FiguraGeometrica*> f;
 
   std::ifstream fin;
   std::string str;
@@ -41,19 +41,22 @@ int main(){
       //  putbox 0 9 0 9 0 9 0 0 1.0 1.0
       fin >> x0 >> x1 >> y0 >> y1 >> z0 >> z1;
       fin >> r >> g >>  b >> a;
-      f[nelem++] = new PutBox(x0, x1,
-                              y0, y1,
-                              z0, z1,
-                              r, g, b, a);
+      f.push_back(new PutBox(x0, x1,
+                             y0, y1,
+                             z0, z1,
+                             r, g, b, a));
 
     } else if(str.compare("cutbox")==0){
       fin >> x0 >> x1 >> y0 >> y1 >> z0 >> z1;
-      f[nelem++] = new CutBox(x0, x1, y0, y1, z0, z1);
+      f.push_back(new CutBox(x0, x1, y0, y1, z0, z1));
     }
   }
-  for(int i=0; i<nelem; i++){
+  for(size_t i=0; i<f.size(); i++){
     std::cout << "draw\n";
     f[i]->draw(*s);
+  }
+  for(size_t i=0; i<f.size(); i++){
+    delete f[i];
   }
 
   s->writeOFF("/home/ambj/testetrono.off");
