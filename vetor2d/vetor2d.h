@@ -14,6 +14,13 @@ public:
     // que vem a seguir
     void setX(float x_);
     float getX();
+
+    void setY(float y_);
+    float getY(void);
+    float norma(); // calcula o seu tamanho
+    float teta(); // angulo com eixo x
+    void print(); // imprime o vetor
+
 };
 
 
