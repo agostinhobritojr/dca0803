@@ -19,7 +19,6 @@ int main(void){
     std::cout << "norma = " << v.norma() << std::endl;
     std::cout << "angulo = " << v.teta() << std::endl;
     v.print();
-
 }
 
 
