@@ -32,5 +32,19 @@ void Vetor2d::print(){
     std::cout << "(" << x << "," << y << ")";
 }
 
+Vetor2d Vetor2d::soma(Vetor2d v){
+    Vetor2d ret;
+    ret.x = x + v.x;
+    ret.y = y + v.y;
+    return ret;
+}
+
+
+
+
+
+
+
+
 
 

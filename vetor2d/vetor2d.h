@@ -20,6 +20,7 @@ public:
     float norma(); // calcula o seu tamanho
     float teta(); // angulo com eixo x
     void print(); // imprime o vetor
+    Vetor2d soma(Vetor2d v);
 
 };
 
