@@ -4,6 +4,15 @@
 
 // metodo setX no escopo da classe
 // Vetor2d
+Vetor2d::Vetor2d(){
+    std::cout << "Chamou o construtor padrao\n";
+    x = y = 1;
+}
+Vetor2d::Vetor2d(int x_, int y_){
+    std::cout << "Chamou o construtor com argumentos\n";
+    x = x_; y = y_;
+}
+
 void Vetor2d::setX(float x_){
     x = x_;
 }
@@ -39,12 +48,23 @@ Vetor2d Vetor2d::soma(Vetor2d v){
     return ret;
 }
 
+Vetor2d Vetor2d::subtrai(Vetor2d v){
+    Vetor2d ret;
+    ret.x = x - v.x;
+    ret.y = y - v.y;
+    return ret;
+}
 
+Vetor2d Vetor2d::mult(float a){
+    Vetor2d ret;
+    ret.x = a*x;
+    ret.y = a*y;
+    return ret;
+}
 
-
-
-
-
-
-
+float Vetor2d::mult(Vetor2d v){
+    float ret;
+    ret = x*v.x+y*v.y;
+    return ret;
+}
 
