@@ -12,10 +12,18 @@ public:
     // sao as partes publicas da classe
     // qualquer trecho de codigo pode usar o
     // que vem a seguir
+
+    // CONSTRUTORES NAO DEVOLVEM VALORES
     // construtor padrao da classe
-    Vetor2d();
+    //Vetor2d();
     // construtor com argumentos
-    Vetor2d(int x_, int y_);
+    Vetor2d(int x_=0, int y_=0); //Vetor v;
+
+    // construtor de copia
+    Vetor2d(const Vetor2d & v);
+
+    // destrutor
+    ~Vetor2d();
 
     void setX(float x_);
     float getX();

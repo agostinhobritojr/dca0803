@@ -5,12 +5,15 @@ int main(void){
     // Declaracao do objeto v
     // que pertence aa classe Vetor2d
     std::cout << "passou aqui 1----\n";
-    Vetor2d v, v1(3,1), v2, v3;
+    Vetor2d v, v4(2), v1(3,1), v2(v1), v3=v2;
     std::cout << "passou aqui 2----\n";
-  //  v1.setX(0); v2.setY(0);
-    v.print();
-    v1.print();
+  // v1.setX(0); v2.setY(0);
+  // v.print();
+  // v4.print();
+  // v1.print();
 
+    v3 = v1.subtrai(v2);
+    v3.print(); std::cout << "\n";
 
     /*
     float valor;
@@ -25,8 +28,6 @@ int main(void){
     v1.setX(3); v1.setY(4);
     v2.setX(2); v2.setY(-1);
 
-    v3 = v1.subtrai(v2);
-    v3.print(); std::cout << "\n";
 
     v3 = v1.mult(1.8);
     v3.print(); std::cout << "\n";
