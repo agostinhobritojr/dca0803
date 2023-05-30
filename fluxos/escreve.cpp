@@ -8,6 +8,7 @@ int main(void){
   if(!fout.is_open()){
     exit(1);
   }
-  fout << "Agostinho Brito \n";
+  int x=4;
+  fout << "Agostinho Brito " << x << "\n";
   fout.close();
 }
