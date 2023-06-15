@@ -3,7 +3,6 @@
 
 int main(void){
     Motor m;
-    m.preco = 20;
     m.setFabricante("ACME");
     m.setPreco(23.45);
     m.setNome("Speedatron");

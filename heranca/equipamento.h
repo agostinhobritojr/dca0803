@@ -12,6 +12,8 @@ protected:
     float preco;
 public:
     Equipamento();
+    Equipamento(int _preco);
+    ~Equipamento();
     void setNome(const char *_nome);
     void setFabricante(const char *_fabricante);
     void setPreco(float _preco);

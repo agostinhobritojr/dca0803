@@ -1,8 +1,17 @@
 #include "equipamento.h"
 #include <string.h>
+#include <iostream>
 
 Equipamento::Equipamento(){
+    std::cout << "Construtor Equipamento\n";
+}
 
+Equipamento::Equipamento(int _preco){
+    preco = _preco;
+}
+
+Equipamento::~Equipamento(){
+    std::cout << "Destrutor Equipamento\n";
 }
 
 void Equipamento::setNome(const char *nome_){
