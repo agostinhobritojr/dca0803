@@ -35,10 +35,13 @@ int main(){
             }
         }
     }
+    // Sculptor *s ;
+    // s = new Sculptor(nx, ny, nz);
     for(int i=0; i<figs.size(); i++){
-        figs[i]->draw();
+        figs[i]->draw(*s);
+      //  figs[i]->draw(*s);
     }
-
+    // s->writeOFF("saida.off");
 
 /*    figs.push_back(new Circulo());
     figs.push_back(new Circulo());

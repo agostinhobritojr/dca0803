@@ -3,6 +3,8 @@
 
 
 class FiguraGeometrica{
+protected:
+    float r, g, b, a;
 public:
     FiguraGeometrica();
     // FUNCAO VIRTUAL PURA TORNA A CLASSE ABSTRATA
