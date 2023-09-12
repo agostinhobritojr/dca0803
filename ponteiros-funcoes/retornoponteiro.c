@@ -11,6 +11,27 @@ int* myrandom(int n){
   return r;
 }
 
+void *myrealloc_generico(void * antigo, size_t tam_antigo, 
+size_t tam_novo){
+
+  void *retorno;
+
+  if (tam_antigo == tam_novo){
+    return antigo;
+  }
+
+  retorno =  malloc(tam_novo);
+
+  if(tam_antigo < tam_novo){
+    memcpy(retorno, antigo, tam_antigo); 
+  }
+  else{
+    memcpy(retorno, antigo, tam_novo);
+  }
+  free(antigo);
+  return retorno;   
+}
+
 int* myrealloc(int* antigo, int tam_antigo, int tam_novo){
   int* retorno;
   if(tam_antigo == tam_novo){
@@ -31,19 +52,19 @@ int* myrealloc(int* antigo, int tam_antigo, int tam_novo){
 
 
 int main(void){
-  int *r, i, n=5, m=10;
+  int *r, i, n=10, m=5;
   r = myrandom(n);
   for(i=0; i<n; i++){
     printf("%d\n", r[i]);
   }
   printf("\n");
-  r = myrealloc(r, n, m);
+//  r = myrealloc(r, n, m);
+  r = myrealloc_generico(r, n*sizeof(int), m*sizeof(int));
   for(i=0; i<m; i++){
     printf("%d\n", r[i]);
   }
-  free(r);
 
-  r = realloc(r, m * sizeof(int));
+//  r = realloc(r, m * sizeof(int));
 
   return 0;
 }
