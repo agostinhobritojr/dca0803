@@ -2,6 +2,16 @@
 #include <stdlib.h>
 #include <string.h>
 
+
+// retorno de ponteiros para variaveis locais
+// leva a enderecos INVALIDOS
+int* teste(int n){
+  int *ret, alo;
+  ret = &alo;
+  return ret;
+}
+
+
 int* myrandom(int n){
   int *r, i;
   r = malloc(n * sizeof(int));
