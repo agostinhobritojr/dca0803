@@ -3,6 +3,20 @@
 #include <cmath>
 
 // :: - operador de ESCOPO
+Vetor2d::Vetor2d(){
+    std::cout << "Construtor default\n";
+    x = y = 0;
+}
+
+Vetor2d::Vetor2d(float x_, float y_){
+    std::cout << "Construtor com argumentos\n";
+    x = x_; y = y_;
+}
+
+Vetor2d::~Vetor2d(){
+    std::cout << "Destrutor\n";
+}
+
 void Vetor2d::setX(float x_){
     x = x_;
 }
@@ -35,6 +49,27 @@ Vetor2d Vetor2d::soma(Vetor2d v){
     Vetor2d ret;
     ret.x = x + v.x;
     ret.y = y + v.y;
+    return ret;
+}
+
+Vetor2d Vetor2d::subtracao(Vetor2d v){
+    Vetor2d ret;
+    ret.x = x - v.x;
+    ret.y = y - v.y;
+    return ret;
+}
+
+Vetor2d Vetor2d::produto(float a){
+    Vetor2d ret;
+    ret.x = x*a;
+    ret.y = y*a;
+    return ret;
+
+}
+
+float Vetor2d::produto(Vetor2d v){
+    float ret;
+    ret = x*v.x + y*v.y;
     return ret;
 }
 
