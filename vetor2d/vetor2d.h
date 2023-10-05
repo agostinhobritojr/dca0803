@@ -6,9 +6,12 @@ private:
     float x;
 public:
     // construtor padrão
-    Vetor2d();
-    // construtor com argumentos
-    Vetor2d(float x_, float y_);
+    //Vetor2d();
+    // construtor com argumentos (e atribuir valores iniciais a estes)
+    Vetor2d(float x_=0, float y_=0);
+
+    Vetor2d(const Vetor2d & v);
+
     ~Vetor2d();
     void setX(float x_);
     float getX();

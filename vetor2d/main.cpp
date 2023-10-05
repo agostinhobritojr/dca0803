@@ -4,7 +4,8 @@
 
 int main(void){
     // v eh um objeto da classe Vetor2d
-    Vetor2d v(7.0,8.0), v1, v2;
+    Vetor2d v(7.0, 8.0), v1, v2;
+    Vetor2d v4=v, v5(v4);  // invocacoes do construtor de copia
     Vetor2d v3, un;
     float a;
     v1.setX(3); v1.setY(4);
