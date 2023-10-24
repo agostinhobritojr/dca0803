@@ -79,6 +79,14 @@ float Vetor2d::produto(Vetor2d v){
     return ret;
 }
 
+Vetor2d Vetor2d::operator + (Vetor2d v){
+    Vetor2d ret;
+    ret.x = x + v.x;
+    ret.y = y + v.y;
+    return ret;
+}
+
+
 
 
 
