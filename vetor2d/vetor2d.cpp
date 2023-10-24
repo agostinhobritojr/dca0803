@@ -9,18 +9,18 @@
 //}
 
 Vetor2d::Vetor2d(float x_, float y_){
-    std::cout << "Construtor com argumentos\n";
+ //   std::cout << "Construtor com argumentos\n";
     x = x_; y = y_;
 }
 
 Vetor2d::Vetor2d(const Vetor2d &v){
-    std::cout << "Construtor de copia\n";
+//    std::cout << "Construtor de copia\n";
     x = v.x;
     y = v.y;
 }
 
 Vetor2d::~Vetor2d(){
-    std::cout << "Destrutor\n";
+ //   std::cout << "Destrutor\n";
 }
 
 void Vetor2d::setX(float x_){
@@ -86,8 +86,37 @@ Vetor2d Vetor2d::operator + (Vetor2d v){
     return ret;
 }
 
+Vetor2d Vetor2d::operator -(Vetor2d v){
+    Vetor2d ret;
+    ret.x = x - v.x;
+    ret.y = y - v.y;
+    return ret;
+}
 
+float Vetor2d::operator *(Vetor2d v){
+    return x*v.x + y*v.y;
+}
 
+Vetor2d Vetor2d::operator *(float  a){
+    Vetor2d ret;
+    ret.x = x*a;
+    ret.y = y*a;
+    return ret;
+}
+
+Vetor2d operator*(float a, Vetor2d v1){
+    Vetor2d ret;
+//    ret.setX(a*v1.getX());
+//    ret.setY(a*v1.getY());
+    ret.x = a * v1.x;
+    ret.y = a * v1.y;
+    return ret;
+}
+
+std::ostream&  operator << (std::ostream & s, Vetor2d v){
+    s << "(" << v.x << "," << v.y << ")";
+    return s;
+}
 
 
 

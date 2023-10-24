@@ -9,10 +9,16 @@ int main(void){
     Vetor2d v3, un;
     float a;
     v1.setX(3); v1.setY(4);
-    v2.setX(5); v2.setY(-1);
+    std::cout << v1 << "\n";
+//    v2.setX(5); v2.setY(-1);
 //    v3 = v1.operator +(v2);
-    v3 = v1 + v2;
-    v3.print();
+
+    // sobrecargas de operadores
+//    v3 = v1 + v2; v3.print();
+//    v3 = v1 - v2; v3.print();
+//    std::cout <<  v1*v2 << std::endl;
+//    v3 = v1 * 4; v3.print();
+//    v3 = 4 * v1; v3.print();
 
 /*    v3 = v1.soma(v2);
     v3.print();

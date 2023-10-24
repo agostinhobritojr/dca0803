@@ -1,4 +1,5 @@
 // declaracao da classe Vetor2d
+#include <iostream>
 
 class Vetor2d{
 private:
@@ -23,11 +24,24 @@ public:
     Vetor2d subtracao(Vetor2d v);
     Vetor2d produto(float a);
     float produto(Vetor2d v);
-    // sobrecarga do operador +
+
+    // sobrecarga de operadores
     Vetor2d operator + (Vetor2d v);
-
-
+    Vetor2d operator - (Vetor2d v);
+    float operator * (Vetor2d v);
+    Vetor2d operator * (float a);
+    // funcao amiga
+    friend Vetor2d operator*(float a, Vetor2d v1);
+    friend std::ostream& operator << (std::ostream & s, Vetor2d v);
 };
+
+Vetor2d operator*(float a, Vetor2d v1);
+
+
+
+
+
+
 
 
 
