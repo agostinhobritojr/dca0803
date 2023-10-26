@@ -30,7 +30,7 @@ public:
     Vetor2d operator - (Vetor2d v);
     float operator * (Vetor2d v);
     Vetor2d operator * (float a);
-    // funcao amiga
+    // funcao amigas
     friend Vetor2d operator*(float a, Vetor2d v1);
     friend std::ostream& operator << (std::ostream & s, Vetor2d v);
 };
