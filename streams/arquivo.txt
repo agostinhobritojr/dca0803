@@ -1,2 +1,0 @@
-x = 4
-Agostinho de Medeiros Brito Junior
