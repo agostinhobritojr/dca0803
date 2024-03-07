@@ -25,6 +25,7 @@ int main(void){
   int a, b, c;
   printf("Digite a, b, c: ");
   scanf("%d %d %d", &a, &b, &c);
+//  alo(x);
   ordena(&a, &b, &c);
   printf("a = %d; b = %d; c = %d\n", a, b, c);
   return 0;
