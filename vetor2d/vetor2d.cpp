@@ -2,6 +2,25 @@
 #include <iostream>
 #include <cmath>
 
+Vetor2d::Vetor2d(){
+    x = y = 0;
+    std::cout << "construtor padrao\n";
+}
+
+Vetor2d::Vetor2d(float x_, float y_){
+    x = x_; y = y_;
+    std::cout << "construtor com argumentos\n";
+}
+
+Vetor2d::~Vetor2d(){
+    std::cout << "destrutor\n";
+}
+
+Vetor2d::Vetor2d(const Vetor2d &v_){
+    x = v_.x; y = v_.y;
+    std::cout << "construtor de copia\n";
+}
+
 void Vetor2d::setX(float x_){
     x = x_;
 }
@@ -36,6 +55,15 @@ float Vetor2d::produto(Vetor2d v){
     ret = x * v.x + y * v.y;
     return ret;
 }
+
+
+
+
+
+
+
+
+
 
 
 
