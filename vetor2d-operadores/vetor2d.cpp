@@ -51,6 +51,17 @@ Vetor2d Vetor2d::operator +(Vetor2d v1){
     return ret;
 }
 
+//Vetor2d Vetor2d::operator =(Vetor2d &v1){
+//    x = v1.x;
+//    y = v1.y;
+//    return *this;
+//}
+
+Vetor2d Vetor2d::operator ++(){
+    x++; y++;
+    return *this;
+}
+
 float Vetor2d::norma(){
     return std::sqrt(x*x + y*y);
 }
@@ -71,14 +82,50 @@ float Vetor2d::produto(Vetor2d v){
     return ret;
 }
 
+Vetor2d Vetor2d::operator*(float a){
+    Vetor2d ret;
+    ret.x = a *x;
+    ret.y = a *y;
+    return ret;
+}
+
+float Vetor2d::operator*(Vetor2d v){
+    float ret;
+    ret = x * v.x + y * v.y;
+    return ret;
+}
+
+Vetor2d operator*(float a, Vetor2d v){
+    Vetor2d ret;
+    ret.x = a * v.x;
+    ret.y = a * v.y;
+    return ret;
+}
 
 
+std::ostream& operator << (std::ostream &os, Vetor2d v){
+    os << "(" << v.x << ", " << v.y << ")";
+    return os;
+}
 
 
+Vetor2d& Vetor2d::operator=(const Vetor2d& outro){
+    std::cout << "atribuicao de copia\n";
+    if (this != &outro) {
+        x = outro.x;
+        y = outro.y;
+    }
+    return *this;
+}
 
-
-
-
+Vetor2d& Vetor2d::operator=(const Vetor2d&& outro){
+    std::cout << "atribuicao de movimentacao\n";
+    if (this != &outro) {
+        x = outro.x;
+        y = outro.y;
+    }
+    return *this;
+}
 
 
 

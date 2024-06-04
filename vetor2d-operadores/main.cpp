@@ -9,10 +9,29 @@ int main(void){
 
     //    v = v1.soma(v2);
     //    v = v1.operator+(v2);
+       v = v1 + v2;
 
-    v = v1 + v2;
+    v = v1;
 
-    std::cout << 34;
+    v = v1 * 4;
 
-    v.print();
+    v = 4 * v1;
+
+//    v.print();
+
+    std::cout << "v = " << v << " e v1 = " << v1 <<std::endl;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
