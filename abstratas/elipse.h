@@ -3,10 +3,10 @@
 
 #include "figurageometrica.h"
 
-class Elipse : public FiguraGeometrica
-{
+class Elipse : public FiguraGeometrica{
+    float cx, cy, raiox, raioy;
 public:
-    Elipse();
+    Elipse(float cx, float cy, float raiox, float raioy);
     void draw();
 };
 

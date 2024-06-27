@@ -3,10 +3,10 @@
 
 #include "figurageometrica.h"
 
-class Cubo : public FiguraGeometrica
-{
+class Cubo : public FiguraGeometrica{
+    float cx, cy, lado;
 public:
-    Cubo();
+    Cubo(float cx, float cy, float lado);
     void draw();
 };
 
