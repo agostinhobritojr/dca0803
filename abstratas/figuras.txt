@@ -1,0 +1,3 @@
+elipse 3 6 5 5
+cubo 2 2 10
+retangulo 3 4 10 8
