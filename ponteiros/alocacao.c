@@ -34,5 +34,6 @@ int main(void) {
     printf(" x+1 = %p\n", &x[1]);
   }
   free(x);
+  x = NULL;
   free(x);
 }
