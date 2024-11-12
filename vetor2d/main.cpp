@@ -20,6 +20,15 @@ public:
         std::cout << "(" << x << "," <<
             y << ")" << std::endl;
     }
+    float norma(){
+
+    }
+    float angulo(){
+
+    }
+    Vetor2d unitario(){
+
+    }
 };
 
 int main(void){
