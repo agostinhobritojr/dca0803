@@ -1,42 +1,17 @@
 #include <iostream>
-
-class Vetor2d{
-private:
-    float x, y;
-public:
-    void setX(float x_){
-        x = x_;
-    }
-    float getX(void){
-        return x;
-    }
-    void setY(float y_){
-        y = y_;
-    }
-    float getY(){
-        return y;
-    }
-    void print(){
-        std::cout << "(" << x << "," <<
-            y << ")" << std::endl;
-    }
-    float norma(){
-
-    }
-    float angulo(){
-
-    }
-    Vetor2d unitario(){
-
-    }
-};
+#include <math.h>
+#include "vetor2d.h"
 
 int main(void){
-    Vetor2d v;
+    Vetor2d v, u;
     v.setX(3);
     v.setY(4);
  //   std::cout << v.getX() << std::endl;
     v.print();
+    std::cout << "norma  = " << v.norma() << std::endl;
+    std::cout << "angulo = " << v.angulo() << std::endl;
+    u = v.unitario();
+    u.print();
 }
 
 
