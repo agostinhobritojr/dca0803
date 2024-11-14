@@ -13,5 +13,11 @@ public:
     float norma();
     float angulo();
     Vetor2d unitario();
+    /*
+     * soma
+     * subtracao
+     * produto por escalar
+     * produto escalar
+     * */
 };
 #endif // VETOR2D_H
