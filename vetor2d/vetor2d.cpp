@@ -15,12 +15,18 @@ Vetor2d::Vetor2d(float x_, float y_){
     y = y_;
 }
 
+Vetor2d::Vetor2d(const Vetor2d &v1){
+    std::cout << "Construtor de copia\n";
+    x = v1.x;
+    y = v1.y;
+}
+
 Vetor2d::~Vetor2d(){
     std::cout << "Destrutor\n";
 }
 
-void Vetor2d::setX(float x_){
-    x = x_;
+void Vetor2d::setX(float x){
+    this->x = x;
 }
 float Vetor2d::getX(void){
     return x;
@@ -32,8 +38,13 @@ float Vetor2d::getY(){
     return y;
 }
 void Vetor2d::print(){
-    std::cout << "(" << x << "," <<
-        y << ")" << std::endl;
+ //   std::cout << "(" << x << "," <<
+ //       y << ")" << std::endl;
+    std::cout << "Alo, maria!\n";
+}
+
+void Vetor2d::meuEndereco(){
+    std::cout << "meu endereco = " << this << std::endl;
 }
 float Vetor2d::norma(){
     return sqrt(x*x+y*y);
@@ -47,3 +58,15 @@ Vetor2d Vetor2d::unitario(){
     unit.y = y / norma();
     return unit;
 }
+
+float Vetor2d::produto(Vetor2d v1){
+    float result;
+    result = x*v1.x + y*v1.y;
+    return result;
+}
+
+
+
+
+
+
