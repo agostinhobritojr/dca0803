@@ -5,6 +5,3 @@ CONFIG -= qt
 
 SOURCES += \
         main.cpp
-
-HEADERS += \
-    alo.h
