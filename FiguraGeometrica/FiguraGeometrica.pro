@@ -8,12 +8,10 @@ SOURCES += \
         figurageometrica.cpp \
         main.cpp \
         reta.cpp \
-        retaderivada.cpp \
         retangulo.cpp
 
 HEADERS += \
     circulo.h \
     figurageometrica.h \
     reta.h \
-    retaderivada.h \
     retangulo.h

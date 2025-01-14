@@ -5,5 +5,5 @@ FiguraGeometrica::FiguraGeometrica() {}
 
 FiguraGeometrica::~FiguraGeometrica()
 {
-    std::cout << "destrutor FiguraGeometrica\n";
+//    std::cout << "destrutor FiguraGeometrica\n";
 }
