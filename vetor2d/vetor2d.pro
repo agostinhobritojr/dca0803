@@ -4,4 +4,9 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        main.cpp
+        main.cpp \
+        vetor2d.cpp
+
+HEADERS += \
+    matriz.h \
+    vetor2d.h
