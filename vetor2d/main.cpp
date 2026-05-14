@@ -4,11 +4,18 @@
 
 
 int main(void){
-    Vetor2d v, v2;
-
+    Vetor2d v, v2(5,6);
+    int x = 3;
     float a;
+
+    v.print();
+    v2.print();
+
+    std::cout << "\n\n\n";
+
 //     v.x = 4;
     v.setX(3);
+
     v.setY(4);
 
     v2 = v.produto(3);

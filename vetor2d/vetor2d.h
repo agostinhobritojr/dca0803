@@ -7,6 +7,12 @@ private:
     float x;
     float y;
 public:
+    // construtor (padrao)
+    Vetor2d();
+    // construtor com argumentos
+    Vetor2d(float x_, float y_);
+    // destrutor
+    ~Vetor2d();
     void setX(float x_);
     void setY(float y_);
     float getX();
