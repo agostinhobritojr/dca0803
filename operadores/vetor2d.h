@@ -1,0 +1,32 @@
+#ifndef VETOR2D_H
+#define VETOR2D_H
+
+class Vetor2d{
+
+private:
+    float x;
+    float y;
+public:
+    // construtor (padrao)
+    Vetor2d();
+    // construtor com argumentos
+    Vetor2d(float x_, float y_);
+    // destrutor
+    ~Vetor2d();
+    void setX(float x_);
+    void setY(float y_);
+    float getX();
+    float getY();
+    void print();
+    void alo();
+    Vetor2d soma(Vetor2d v);
+    Vetor2d operator + (Vetor2d v);
+    Vetor2d operator - (Vetor2d v);
+    Vetor2d operator * (float a);
+    float operator * (Vetor2d v);
+    bool operator == (Vetor2d v);
+};
+
+Vetor2d operator*(float a, Vetor2d v);
+
+#endif // VETOR2D_H
