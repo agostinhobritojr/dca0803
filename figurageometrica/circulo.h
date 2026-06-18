@@ -3,10 +3,10 @@
 
 #include "figurageometrica.h"
 
-class Circulo : public FiguraGeometrica
-{
+class Circulo : public FiguraGeometrica{
+    int x, y, raio;
 public:
-    Circulo();
+    Circulo(int x, int y, int raio);
     void draw();
 };
 
