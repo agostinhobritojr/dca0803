@@ -14,7 +14,10 @@ int main(){
   }
   // usa o espaco alocado da mesma forma
   // que um array
-  x[0] = 4;
+  for(int i=0; i<10; i++){
+     x[i] = i;
+  }
+
   for(int i=0; i<10; i++){
      printf("%2d ", x[i]);
   }
