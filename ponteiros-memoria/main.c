@@ -1,7 +1,19 @@
 #include <stdio.h>
 
+int z, w=0;
+
+void funcao(){
+  static int a=0;
+  printf("&a = %p\n", &a);
+}
+
 int main(){
   int *px, *py, x, y;
+  printf("&w = %p\n", &w);
+  printf("&z = %p\n", &z);
+  funcao();
+  printf("\n\n");
+
   x = 2;
   px = &x;
   py = &y;
