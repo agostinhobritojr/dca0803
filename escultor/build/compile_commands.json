@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/ambj/workspace/dca0803/escultor/build",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/sculptor.dir/main.cpp.o -c /home/ambj/workspace/dca0803/escultor/main.cpp",
+  "file": "/home/ambj/workspace/dca0803/escultor/main.cpp",
+  "output": "CMakeFiles/sculptor.dir/main.cpp.o"
+},
+{
+  "directory": "/home/ambj/workspace/dca0803/escultor/build",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/sculptor.dir/sculptor.cpp.o -c /home/ambj/workspace/dca0803/escultor/sculptor.cpp",
+  "file": "/home/ambj/workspace/dca0803/escultor/sculptor.cpp",
+  "output": "CMakeFiles/sculptor.dir/sculptor.cpp.o"
+}
+]

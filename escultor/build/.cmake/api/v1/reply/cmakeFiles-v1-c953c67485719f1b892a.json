@@ -21,7 +21,7 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/usr/share/cmake-4.2/Modules/CMakeNinjaFindMake.cmake"
+			"path" : "/usr/share/cmake-4.2/Modules/CMakeUnixFindMake.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -838,16 +838,6 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/usr/share/cmake-4.2/Modules/Compiler/GNU-CXX-CXXImportStd.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/usr/share/cmake-4.2/Modules/Compiler/GNU-CXX-CXXImportStd.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
 			"path" : "/usr/share/cmake-4.2/Modules/CMakeCXXCompiler.cmake.in"
 		},
 		{
@@ -898,8 +888,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/ambj/workspace/dca0803/sculptor/build",
-		"source" : "/home/ambj/workspace/dca0803/sculptor"
+		"build" : "/home/ambj/workspace/dca0803/escultor/build",
+		"source" : "/home/ambj/workspace/dca0803/escultor"
 	},
 	"version" : 
 	{

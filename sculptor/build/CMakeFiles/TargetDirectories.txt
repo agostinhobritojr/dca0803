@@ -1,3 +1,0 @@
-/home/ambj/workspace/dca0803/sculptor/build/CMakeFiles/sculptor.dir
-/home/ambj/workspace/dca0803/sculptor/build/CMakeFiles/edit_cache.dir
-/home/ambj/workspace/dca0803/sculptor/build/CMakeFiles/rebuild_cache.dir

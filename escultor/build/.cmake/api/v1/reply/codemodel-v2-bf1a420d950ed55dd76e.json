@@ -50,8 +50,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/ambj/workspace/dca0803/sculptor/build",
-		"source" : "/home/ambj/workspace/dca0803/sculptor"
+		"build" : "/home/ambj/workspace/dca0803/escultor/build",
+		"source" : "/home/ambj/workspace/dca0803/escultor"
 	},
 	"version" : 
 	{

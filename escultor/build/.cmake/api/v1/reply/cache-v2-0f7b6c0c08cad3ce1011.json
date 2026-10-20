@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/ambj/workspace/dca0803/sculptor/build"
+			"value" : "/home/ambj/workspace/dca0803/escultor/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -92,6 +92,22 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "3"
+		},
+		{
+			"name" : "CMAKE_COLOR_MAKEFILE",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Enable/Disable color output during build."
+				}
+			],
+			"type" : "BOOL",
+			"value" : "ON"
 		},
 		{
 			"name" : "CMAKE_COMMAND",
@@ -402,6 +418,18 @@
 			"value" : "CMAKE_DLLTOOL-NOTFOUND"
 		},
 		{
+			"name" : "CMAKE_EDIT_COMMAND",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to cache edit program executable."
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/bin/cmake-gui"
+		},
+		{
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
 			"properties" : 
 			[
@@ -494,22 +522,6 @@
 			"value" : ""
 		},
 		{
-			"name" : "CMAKE_EXPORT_BUILD_DATABASE",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Enable/Disable output of build database during the build."
-				}
-			],
-			"type" : "BOOL",
-			"value" : ""
-		},
-		{
 			"name" : "CMAKE_EXPORT_COMPILE_COMMANDS",
 			"properties" : 
 			[
@@ -543,7 +555,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/ambj/workspace/dca0803/sculptor/build/CMakeFiles/pkgRedirects"
+			"value" : "/home/ambj/workspace/dca0803/escultor/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -555,7 +567,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "Ninja"
+			"value" : "Unix Makefiles"
 		},
 		{
 			"name" : "CMAKE_GENERATOR_INSTANCE",
@@ -603,7 +615,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/ambj/workspace/dca0803/sculptor"
+			"value" : "/home/ambj/workspace/dca0803/escultor"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -667,11 +679,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Program used to build from build.ninja files."
+					"value" : "Path to a program."
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/ninja"
+			"value" : "/usr/bin/gmake"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -1191,7 +1203,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/ambj/workspace/dca0803/sculptor/build"
+			"value" : "/home/ambj/workspace/dca0803/escultor/build"
 		},
 		{
 			"name" : "Sculptor_IS_TOP_LEVEL",
@@ -1215,7 +1227,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/ambj/workspace/dca0803/sculptor"
+			"value" : "/home/ambj/workspace/dca0803/escultor"
 		}
 	],
 	"kind" : "cache",

@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -Wl,--dependency-file=CMakeFiles/sculptor.dir/link.d CMakeFiles/sculptor.dir/main.cpp.o CMakeFiles/sculptor.dir/sculptor.cpp.o -o sculptor
