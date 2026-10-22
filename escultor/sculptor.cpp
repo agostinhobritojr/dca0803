@@ -1,6 +1,13 @@
 #include "sculptor.h"
 
-Sculptor::Sculptor(int _nx, int _ny, int _nz) {}
+#include <fstream>
+
+Sculptor::Sculptor(int _nx, int _ny, int _nz) {
+  nx = _nx;
+  ny = _ny;
+  nz = _nz;
+  // alocar a matriz 3d "v"
+}
 
 Sculptor::~Sculptor() {}
 
@@ -24,4 +31,23 @@ void Sculptor::putEllipsoid(int xcenter, int ycenter, int zcenter, int rx,
 
 void Sculptor::cutEllipsoid(int xcenter, int ycenter, int zcenter, int rx,
                             int ry, int rz) {}
-void Sculptor::writeOFF(const char* filename) {}
+void Sculptor::writeOFF(const char* filename) {
+  std::ofstream fout;
+  int nvertices = 0, nfaces = 0, nvoxels = 0;
+  fout.open(filename);
+
+  if (!fout.is_open()) {
+    exit(1);
+  }
+  // laco triplo para contar os
+  // voxels ativos marcados com show = true
+
+  nvoxels = 30;
+
+  nvertices = 8 * nvoxels;
+  nfaces = 6 * nvoxels;
+
+  fout << "OFF\n";
+  fout << nvertices << " " << nfaces << " 0\n";
+  fout.close();
+}
